@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    // Nastavení semínka pro generátor náhodných čísel
+    srand(time(0));
+
+    // Vygenerování náhodného čísla od 1 do 100
+    int randomNumber = rand() % 100 + 1;
+
+    // Výpis vygenerovaného čísla
+    printf("Náhodné číslo: %d\n", randomNumber);
+
+    return 0;
+}
